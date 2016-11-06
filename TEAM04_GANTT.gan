@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="DPM Initial Gantt Chart" company="" webLink="http://" view-date="2016-10-26" view-index="0" gantt-divider-location="364" resource-divider-location="412" version="2.8.1" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="DPM Initial Gantt Chart" company="" webLink="http://" view-date="2016-10-28" view-index="0" gantt-divider-location="401" resource-divider-location="412" version="2.8.1" locale="en_US">
     <description/>
-    <view zooming-state="default:1" id="gantt-chart">
-        <field id="tpd3" name="Name" width="128" order="0"/>
-        <field id="tpd13" name="Resources" width="157" order="1"/>
-        <field id="tpd4" name="Begin date" width="32" order="2"/>
-        <field id="tpd5" name="End date" width="28" order="3"/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Name" width="137" order="0"/>
+        <field id="tpd13" name="Resources" width="166" order="1"/>
+        <field id="tpd4" name="Begin date" width="41" order="2"/>
+        <field id="tpd5" name="End date" width="38" order="3"/>
         <option id="taskLabelUp" value=""/>
         <option id="taskLabelDown" value=""/>
         <option id="taskLabelLeft" value="resources"/>
@@ -41,13 +41,25 @@
         </taskproperties>
         <task id="0" name="Project Kick off Meeting" color="#8cb6ce" meeting="true" start="2016-10-23" duration="0" complete="100" expand="true">
             <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="194" type="2" difference="0" hardness="Strong"/>
+            <depend id="199" type="2" difference="0" hardness="Strong"/>
+            <depend id="206" type="2" difference="0" hardness="Strong"/>
+            <depend id="207" type="2" difference="0" hardness="Strong"/>
+            <depend id="208" type="2" difference="0" hardness="Strong"/>
+            <depend id="209" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="204" name="First Draft of 4 Docs" color="#00cc66" meeting="false" start="2016-10-23" duration="2" complete="100" expand="true">
             <depend id="3" type="2" difference="0" hardness="Strong"/>
             <task id="206" name="Initial Capabilities Doc" color="#00cc66" meeting="false" start="2016-10-23" duration="2" complete="100" expand="true"/>
-            <task id="207" name="Initial Constraints Doc" color="#00cc66" meeting="false" start="2016-10-23" duration="2" complete="100" expand="true"/>
-            <task id="208" name="Initial Requirements Doc" color="#00cc66" meeting="false" start="2016-10-23" duration="2" complete="100" expand="true"/>
-            <task id="209" name="Initial System Doc" color="#00cc66" meeting="false" start="2016-10-23" duration="2" complete="100" expand="true"/>
+            <task id="207" name="Initial Constraints Doc" color="#00cc66" meeting="false" start="2016-10-23" duration="2" complete="100" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="208" name="Initial Requirements Doc" color="#00cc66" meeting="false" start="2016-10-23" duration="2" complete="100" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="209" name="Initial System Doc" color="#00cc66" meeting="false" start="2016-10-23" duration="2" complete="100" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
         </task>
         <task id="194" name="First Presentation" color="#00cc66" meeting="false" start="2016-10-23" duration="2" complete="100" expand="true" cost-manual-value="0.0" cost-calculated="true">
             <depend id="3" type="2" difference="0" hardness="Strong"/>
@@ -61,32 +73,54 @@
         <task id="3" name="First Design Meeting" color="#ff0033" meeting="true" start="2016-10-25" duration="0" complete="0" thirdDate="2016-10-25" thirdDate-constraint="1" expand="true">
             <depend id="22" type="2" difference="0" hardness="Strong"/>
             <depend id="203" type="2" difference="0" hardness="Strong"/>
+            <depend id="212" type="2" difference="0" hardness="Strong"/>
             <depend id="285" type="2" difference="0" hardness="Strong"/>
+            <depend id="298" type="2" difference="0" hardness="Strong"/>
+            <depend id="302" type="2" difference="0" hardness="Strong"/>
+            <depend id="306" type="2" difference="0" hardness="Strong"/>
+            <depend id="307" type="2" difference="0" hardness="Strong"/>
+            <depend id="308" type="2" difference="0" hardness="Strong"/>
         </task>
         <task id="203" name="Mechanical Design Reseach" color="#ff0000" meeting="false" start="2016-10-28" duration="2" complete="100" expand="true">
             <depend id="25" type="2" difference="0" hardness="Strong"/>
             <depend id="337" type="2" difference="0" hardness="Strong"/>
-            <task id="212" name="Treads Vs Wheels" color="#ff0000" meeting="false" start="2016-10-28" duration="2" complete="100" expand="true"/>
+            <task id="212" name="Treads Vs Wheels" color="#ff0000" meeting="false" start="2016-10-28" duration="2" complete="100" thirdDate="2016-10-28" thirdDate-constraint="1" expand="true">
+                <depend id="337" type="2" difference="0" hardness="Strong"/>
+            </task>
             <task id="304" name="Block Capture" color="#ff0000" meeting="false" start="2016-10-28" duration="2" complete="100" expand="true">
-                <task id="306" name="Blocks - Clamping Fork Lift" color="#ff0000" meeting="false" start="2016-10-28" duration="2" complete="100" expand="true"/>
-                <task id="307" name="Blocks - Crane" color="#ff0000" meeting="false" start="2016-10-28" duration="2" complete="100" expand="true"/>
-                <task id="308" name="Blocks - Cage" color="#ff0000" meeting="false" start="2016-10-28" duration="2" complete="100" expand="true"/>
+                <task id="306" name="Blocks - Clamping Fork Lift" color="#ff0000" meeting="false" start="2016-10-28" duration="2" complete="100" thirdDate="2016-10-28" thirdDate-constraint="1" expand="true">
+                    <depend id="337" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="307" name="Blocks - Crane" color="#ff0000" meeting="false" start="2016-10-28" duration="2" complete="100" thirdDate="2016-10-28" thirdDate-constraint="1" expand="true">
+                    <depend id="337" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="308" name="Blocks - Cage" color="#ff0000" meeting="false" start="2016-10-28" duration="2" complete="100" thirdDate="2016-10-28" thirdDate-constraint="1" expand="true"/>
             </task>
         </task>
         <task id="22" name="Documentation, budget updates" color="#00cc66" meeting="false" start="2016-10-30" duration="2" complete="100" expand="true">
             <depend id="25" type="2" difference="0" hardness="Strong"/>
-            <task id="337" name="Mechanical Design Proposal" color="#00cc66" meeting="false" start="2016-10-30" duration="2" complete="100" expand="true"/>
+            <task id="337" name="Mechanical Design Proposal" color="#00cc66" meeting="false" start="2016-10-30" duration="2" complete="100" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
             <task id="328" name="Preliminary System Diagram" color="#00cc66" meeting="false" start="2016-10-30" duration="1" complete="100" expand="true">
                 <depend id="330" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="330" name="Preliminary Class Hierarchy" color="#00cc66" meeting="false" start="2016-10-31" duration="1" complete="100" expand="true"/>
-            <task id="384" name="Presentation 2" color="#00cc66" meeting="false" start="2016-10-31" duration="1" complete="100" expand="true"/>
+            <task id="330" name="Preliminary Class Hierarchy" color="#00cc66" meeting="false" start="2016-10-31" duration="1" complete="100" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="384" name="Presentation 2" color="#00cc66" meeting="false" start="2016-10-31" duration="1" complete="100" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
         </task>
         <task id="285" name="Software Design Research" color="#00ccff" meeting="false" start="2016-10-27" duration="3" complete="100" expand="true">
             <depend id="25" type="2" difference="0" hardness="Strong"/>
-            <task id="293" name="Two Brick Coms" color="#00ccff" meeting="false" start="2016-10-27" duration="3" complete="100" expand="true"/>
-            <task id="298" name="Sequential vs Parallel US Polling" color="#00ccff" meeting="false" start="2016-10-28" duration="2" complete="100" priority="0" expand="true"/>
-            <task id="302" name="API Research" color="#00ccff" meeting="false" start="2016-10-27" duration="3" complete="100" expand="true">
+            <task id="293" name="Two Brick Coms" color="#00ccff" meeting="false" start="2016-10-27" duration="3" complete="100" thirdDate="2016-10-27" thirdDate-constraint="1" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="298" name="Sequential vs Parallel US Polling" color="#00ccff" meeting="false" start="2016-10-28" duration="2" complete="100" thirdDate="2016-10-28" thirdDate-constraint="1" priority="0" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="302" name="API Research" color="#00ccff" meeting="false" start="2016-10-27" duration="3" complete="100" thirdDate="2016-10-27" thirdDate-constraint="1" expand="true">
                 <depend id="330" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
@@ -94,31 +128,31 @@
             <depend id="28" type="2" difference="0" hardness="Strong"/>
             <depend id="35" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="28" name="Choose Mechanical Design" color="#ff0000" meeting="false" start="2016-11-01" duration="2" complete="0" expand="true">
+        <task id="28" name="Choose Mechanical Designs" color="#ff0000" meeting="false" start="2016-11-01" duration="2" complete="0" expand="true">
             <depend id="41" type="2" difference="0" hardness="Strong"/>
             <depend id="360" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="360" name="Mechanical Design Implementation" meeting="false" start="2016-11-03" duration="5" complete="0" expand="true">
+        <task id="360" name="Mechanical Designs Implementation" color="#000000" meeting="false" start="2016-11-03" duration="5" complete="0" expand="true">
             <depend id="41" type="2" difference="0" hardness="Strong"/>
-            <task id="370" name="Write LDD Model" color="#00cc66" meeting="false" start="2016-11-03" duration="4" complete="0" expand="true"/>
             <task id="374" name="Write Hardware Manual" color="#00cc66" meeting="false" start="2016-11-03" duration="4" complete="0" expand="true"/>
-            <task id="365" name="Construct Physical Model" color="#ff0000" meeting="false" start="2016-11-03" duration="2" complete="0" expand="true">
+            <task id="463" name="Write LDD Model" color="#00cc66" meeting="false" start="2016-11-03" duration="4" complete="0" expand="true"/>
+            <task id="365" name="Construct Physical Models" color="#ff0000" meeting="false" start="2016-11-03" duration="2" complete="0" expand="true">
                 <depend id="367" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="367" name="Mechanical Component Testing" color="#ffff00" meeting="false" start="2016-11-05" duration="3" complete="0" expand="true">
                 <depend id="77" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
-        <task id="35" name="Software class hierarchy" color="#00ccff" meeting="false" start="2016-11-01" duration="2" complete="0" expand="true">
+        <task id="35" name="Software class hierarchy" color="#00ccff" meeting="false" start="2016-11-01" duration="3" complete="0" expand="true">
             <depend id="38" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="38" name="Software Development Phase 1" color="#00ccff" meeting="false" start="2016-11-03" duration="4" complete="0" expand="true">
+        <task id="38" name="Software Development Phase 1" color="#00ccff" meeting="false" start="2016-11-07" duration="4" complete="0" expand="true">
             <depend id="41" type="2" difference="0" hardness="Strong"/>
-            <task id="350" name="Preliminary API Docs" color="#00cc66" meeting="false" start="2016-11-03" duration="4" complete="0" expand="true"/>
-            <task id="377" name="Pseudo code" color="#00ccff" meeting="false" start="2016-11-03" duration="2" complete="0" expand="true">
+            <task id="350" name="Preliminary API Docs" color="#00cc66" meeting="false" start="2016-11-07" duration="4" complete="0" expand="true"/>
+            <task id="377" name="Pseudo code" color="#00ccff" meeting="false" start="2016-11-07" duration="2" complete="0" expand="true">
                 <depend id="386" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="386" name="Determine Re-usability of Lab code" color="#00ccff" meeting="false" start="2016-11-05" duration="2" complete="0" expand="true">
+            <task id="386" name="Determine Re-usability of Lab code" color="#00ccff" meeting="false" start="2016-11-09" duration="2" complete="0" expand="true">
                 <depend id="434" type="2" difference="0" hardness="Strong"/>
             </task>
         </task>
@@ -128,54 +162,54 @@
         <task id="392" name="Presenation 3" color="#00cc66" meeting="false" start="2016-11-07" duration="1" complete="0" expand="true">
             <depend id="41" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="41" name="Third Design Meeting" color="#ff0033" meeting="true" start="2016-11-08" duration="0" complete="0" thirdDate="2016-11-08" thirdDate-constraint="1" expand="true">
+        <task id="41" name="Third Design Meeting" color="#ff0033" meeting="true" start="2016-11-11" duration="0" complete="0" thirdDate="2016-11-08" thirdDate-constraint="1" expand="true">
             <depend id="77" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="77" name="Complete testing of mechanical design" color="#ffff00" meeting="false" start="2016-11-08" duration="4" complete="0" expand="true">
+        <task id="77" name="Complete testing of mechanical design" color="#ffff00" meeting="false" start="2016-11-11" duration="4" complete="0" expand="true">
             <depend id="88" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="88" name="Initial test of mech and soft for beta" color="#ffff00" meeting="false" start="2016-11-12" duration="2" complete="0" expand="true">
+        <task id="88" name="Initial test of mech and soft for beta" color="#ffff00" meeting="false" start="2016-11-15" duration="2" complete="0" expand="true">
             <depend id="94" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="94" name="Full testing for beta demo" color="#ffff00" meeting="false" start="2016-11-15" duration="2" complete="0" expand="true">
+        <task id="94" name="Full testing for beta demo" color="#ffff00" meeting="false" start="2016-11-19" duration="2" complete="0" expand="true">
             <depend id="98" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="434" name="Software Development Phase 1" color="#00ccff" meeting="false" start="2016-11-07" duration="8" complete="0" expand="true">
+        <task id="434" name="Software Development Phase 1" color="#00ccff" meeting="false" start="2016-11-11" duration="8" complete="0" expand="true">
             <depend id="94" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="98" name="Beta Demo Milestone" color="#00ff00" meeting="true" start="2016-11-17" duration="0" complete="0" thirdDate="2016-11-17" thirdDate-constraint="1" expand="true">
+        <task id="98" name="Beta Demo Milestone" color="#00ff00" meeting="true" start="2016-11-21" duration="0" complete="0" thirdDate="2016-11-17" thirdDate-constraint="1" expand="true">
             <depend id="105" type="2" difference="0" hardness="Strong"/>
             <depend id="108" type="2" difference="0" hardness="Strong"/>
             <depend id="111" type="2" difference="0" hardness="Strong"/>
             <depend id="120" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="105" name="revisions and testing from beta" color="#8cb6ce" meeting="false" start="2016-11-17" duration="4" complete="0" expand="true">
+        <task id="105" name="revisions and testing from beta" color="#8cb6ce" meeting="false" start="2016-11-21" duration="4" complete="0" expand="true">
             <depend id="116" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="108" name="Development of Checklist" color="#8cb6ce" meeting="false" start="2016-11-17" duration="2" complete="0" expand="true">
+        <task id="108" name="Development of Checklist" color="#8cb6ce" meeting="false" start="2016-11-21" duration="2" complete="0" expand="true">
             <depend id="116" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="111" name="Phase 1 integration testing" color="#8cb6ce" meeting="false" start="2016-11-17" duration="1" complete="0" expand="true">
+        <task id="111" name="Phase 1 integration testing" color="#8cb6ce" meeting="false" start="2016-11-21" duration="1" complete="0" expand="true">
             <depend id="116" type="2" difference="0" hardness="Strong"/>
             <depend id="124" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="116" name="Fourth Design Meeting" color="#ff0033" meeting="true" start="2016-11-22" duration="0" complete="0" thirdDate="2016-11-22" thirdDate-constraint="1" expand="true"/>
-        <task id="120" name="Phase 1 poster design" color="#8cb6ce" meeting="false" start="2016-11-17" duration="6" complete="0" expand="true">
+        <task id="116" name="Fourth Design Meeting" color="#ff0033" meeting="true" start="2016-11-25" duration="0" complete="0" thirdDate="2016-11-22" thirdDate-constraint="1" expand="true"/>
+        <task id="120" name="Phase 1 poster design" color="#8cb6ce" meeting="false" start="2016-11-21" duration="6" complete="0" expand="true">
             <depend id="128" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="124" name="Final Integation Testing" color="#8cb6ce" meeting="false" start="2016-11-18" duration="6" complete="0" expand="true">
+        <task id="124" name="Final Integation Testing" color="#8cb6ce" meeting="false" start="2016-11-22" duration="6" complete="0" expand="true">
             <depend id="132" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="128" name="Final Poster Design and Print" color="#8cb6ce" meeting="false" start="2016-11-23" duration="5" complete="0" expand="true">
+        <task id="128" name="Final Poster Design and Print" color="#8cb6ce" meeting="false" start="2016-11-27" duration="5" complete="0" expand="true">
             <depend id="132" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="132" name="Final Demo" color="#333333" meeting="true" start="2016-11-28" duration="0" complete="0" thirdDate="2015-04-10" thirdDate-constraint="1" expand="true">
+        <task id="132" name="Final Demo" color="#333333" meeting="true" start="2016-12-02" duration="0" complete="0" thirdDate="2015-04-10" thirdDate-constraint="1" expand="true">
             <depend id="135" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="135" name="Final document preparation for submission" color="#8cb6ce" meeting="false" start="2016-11-28" duration="3" complete="0" expand="true">
+        <task id="135" name="Final document preparation for submission" color="#8cb6ce" meeting="false" start="2016-12-02" duration="3" complete="0" expand="true">
             <depend id="138" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="138" name="Final Class" color="#333333" meeting="true" start="2016-12-01" duration="0" complete="0" thirdDate="2015-04-13" thirdDate-constraint="1" expand="true"/>
+        <task id="138" name="Final Class" color="#333333" meeting="true" start="2016-12-05" duration="0" complete="0" thirdDate="2015-04-13" thirdDate-constraint="1" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Kareem Halabi" function="1" contacts="kareem.halabi@mail.mcgill.ca" phone="(416) 557-4760"/>
